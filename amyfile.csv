@@ -1,0 +1,6 @@
+require 'csv'
+CSV.open("myfile.csv", "w") do |csv|
+	csv << %w(row of CSV data)
+	csv << %w(another row)
+	# ...
+end
